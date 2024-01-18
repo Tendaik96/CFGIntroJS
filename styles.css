@@ -1,21 +1,76 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+}
+
 #container{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 60%;
+    width: 50%; 
+    height: 55%;
+    align-items: center;
     margin: 0 auto;
+    justify-content: space-between;
+    max-width: 700px;
 }
 
 #container div{
 
-height: 200px;
+height: 160px;
 border:  solid black 2px;
-flex-basis: 30%;
-margin: 1px;
+flex-basis: 32.5%;
+
 }
 
 h1{
     color: red;
     text-align: center;
     font-size: 50px;
+    margin: 2
+            v00
+                                                            h 0;
 }
+
+h3{
+    text-align: center;
+    font-size: 30px;
+}
+
+#score{
+    margin-top: 5vh;
+}
+
+#score div, #score div section{
+    display: flex;
+    flex-direction: row; 
+}
+
+#score div{
+    
+    display: flex;
+    flex-direction: column;098
+    'k#lh#8888'
+    justify-content: center;
+    align-items: center;
+}
+
+#score div section{
+    gap:  20px;
+}
+
+p{
+    text-align: center;
+    transition: all 1s ease;
+}
+
+@media only screen and  (max-width: 800px){
+
+}
+
