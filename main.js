@@ -30,13 +30,22 @@ console.log(one)
 
 function pressX(select) {
 
-    if(select.textContent !== "X"){
+    if(select.textContent !== "X" && cPlayer === cComputer){
     select.textContent = "X";
     select.style.fontSize = "140px"
     cPlayer++;
     console.log(cPlayer)
     }
     
+}
+
+function pressO(select) {
+  if (cPlayer > cComputer && select.textContent !== "X") {
+    select.textContent = "O";
+    select.style.fontSize = "140px";
+    cComputer++;
+    console.log(cPlayer);
+  }
 }
 
 
@@ -50,4 +59,14 @@ divSix.addEventListener("click", () => {pressX(six)})
 divSeven.addEventListener("click", () =>{pressX(seven)})
 divEight.addEventListener("click", () => {pressX(eight)})
 divNine.addEventListener("click", () => {pressX(nine)})
+
+divOne.addEventListener("click", () =>{pressO(one)})
+divTwo.addEventListener("click", () => {pressO(two)})
+divThree.addEventListener("click", () =>{pressO(three)})
+divFour.addEventListener("click", () => {pressO(four)})
+divFive.addEventListener("click", () =>{pressO(five)})
+divSix.addEventListener("click", () => {pressO(six)})
+divSeven.addEventListener("click", () =>{pressO(seven)})
+divEight.addEventListener("click", () => {pressO(eight)})
+divNine.addEventListener("click", () => {pressO(nine)})
 
