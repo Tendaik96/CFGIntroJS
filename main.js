@@ -19,7 +19,6 @@ const divSix = document.getElementById("6d");
 const divSeven = document.getElementById("7d");
 const divEight = document.getElementById("8d");
 const divNine = document.getElementById("9d");
-const parag = document.querySelectorAll("p")
 
 const pScore = document.getElementById("playerScore");
 const cScore = document.getElementById("computerScore");
